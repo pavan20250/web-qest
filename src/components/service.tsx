@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+
 
 const IndustriesSection = () => {
     return (
@@ -7,7 +9,7 @@ const IndustriesSection = () => {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4 text-gray-900">Empowering Service Providers Across Industries</h1>
           <p className="text-gray-600 max-w-4xl mx-auto">
-            Whether you're in sports, education, wellness, household services, or niche markets, our technology simplifies your business operations, making it easier for you to focus on what you do best.
+            Whether you re in sports, education, wellness, household services, or niche markets, our technology simplifies your business operations, making it easier for you to focus on what you do best.
           </p>
         </div>
   
@@ -25,10 +27,11 @@ const IndustriesSection = () => {
             {/* Sports Card */}
             <div className="flex-none w-1/3">
               <div className="rounded-lg overflow-hidden mb-4">
-                <img
-                  src="/sports-image.jpg"
+                <Image
+                  src="/sports.png"
                   alt="Sports"
                   className="w-full h-64 object-cover"
+                  width={100} height={300}
                 />
               </div>
               <h3 className="text-2xl font-bold mb-2 text-gray-700">Sports</h3>
@@ -41,10 +44,11 @@ const IndustriesSection = () => {
             {/* Healthcare & Wellness Card */}
             <div className="flex-none w-1/3">
               <div className="rounded-lg overflow-hidden mb-4">
-                <img
-                  src="/healthcare-image.jpg"
+                <Image
+                  src="/science.png"
                   alt="Healthcare & Wellness"
                   className="w-full h-64 object-cover"
+                  width={100} height={300}
                 />
               </div>
               <h3 className="text-2xl font-bold mb-2 text-gray-700">Healthcare & Wellness</h3>
@@ -57,10 +61,11 @@ const IndustriesSection = () => {
             {/* Learning Activities Card */}
             <div className="flex-none w-1/3">
               <div className="rounded-lg overflow-hidden mb-4">
-                <img
-                  src="/learning-image.jpg"
+                <Image
+                  src="/teaching.png"
                   alt="Learning Activities"
                   className="w-full h-64 object-cover"
+                  width={100} height={300}
                 />
               </div>
               <h3 className="text-2xl font-bold mb-2 text-gray-700">Learning Activities</h3>

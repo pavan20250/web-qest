@@ -28,8 +28,8 @@ const FAQSection = () => {
     <div className="max-w-4xl mx-auto px-6 py-16">
       {/* Header */}
       <div className="text-center mb-10">
-        <h1 className="text-5xl font-extrabold text-gray-900 mb-4">Frequently Asked Questions</h1>
-        <p className="text-lg text-gray-500 max-w-xl mx-auto mb-4">
+        <h1 className="text-3xl sm:text-5xl font-extrabold text-gray-900 mb-4">Frequently Asked Questions</h1>
+        <p className="text-lg sm:text-xl text-gray-500 max-w-xl mx-auto mb-4">
           Find answers to common questions about our services and features.
         </p>
         <p className="text-gray-500">
@@ -61,7 +61,7 @@ const FAQSection = () => {
               className="w-full px-6 py-5 text-left flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition duration-200"
               onClick={() => setActiveQuestion(activeQuestion === faq.id ? '' : faq.id)}
             >
-              <span className="font-semibold text-lg text-gray-800">{faq.question}</span>
+              <span className="font-semibold text-lg sm:text-xl text-gray-800">{faq.question}</span>
               <svg 
                 className={`w-5 h-5 transform transition-transform ${activeQuestion === faq.id ? 'rotate-180' : ''}`}
                 fill="none" 
@@ -83,7 +83,7 @@ const FAQSection = () => {
       {/* Support Link */}
       <div className="text-center mt-10">
         <p className="text-gray-600">
-          Didn't find your answer?{' '}
+          Didn’t find your answer?{' '}
           <a href="#" className="text-blue-600 hover:underline font-semibold">
             Contact our support team
           </a>

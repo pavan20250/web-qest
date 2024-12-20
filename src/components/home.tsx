@@ -3,7 +3,7 @@ import Navbar from './navbar';
 
 const LandingPage = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 via-pink-50 to-transparent">
       <Navbar />
 
       {/* Search Bar Section */}

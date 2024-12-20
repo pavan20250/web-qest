@@ -83,7 +83,7 @@ const FAQSection = () => {
       {/* Support Link */}
       <div className="text-center mt-10">
         <p className="text-gray-600">
-          Didn’t find your answer?{' '}
+          Didn t find your answer?{' '}
           <a href="#" className="text-blue-600 hover:underline font-semibold">
             Contact our support team
           </a>
